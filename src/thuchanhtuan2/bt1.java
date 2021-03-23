@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication5;
+package thuchanhtuan2;
 
 import java.util.Scanner;
 
@@ -11,25 +11,27 @@ import java.util.Scanner;
  *
  * @author doduo
  */
-public class lab2bai1 {
-    
-  private static Scanner scanner = new Scanner(System.in);
+public class bt1 {
+    private static Scanner scanner = new Scanner(System.in);
     /**
-     * main
-     * 
-     * @param args
+     * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // TODO code application logic here System.out.print("Nhập hệ số bậc 2, a = ");
         System.out.print("Nhập hệ số bậc 2, a = ");
-        float a = lab2bai1.scanner.nextFloat();
+        float a = bt1.scanner.nextFloat();
         System.out.print("Nhập hệ số bậc 1, b = ");
-        float b = lab2bai1.scanner.nextFloat();
+        float b = bt1.scanner.nextFloat();
         System.out.print("Nhập hằng số tự do, c = ");
         float c = scanner.nextFloat();
-        lab2bai1.giaiPTBac2(a, b, c);
+        bt1.giaiPTBac2(a, b, c);
     }
-     
-    
+    /**
+     * Giải phương trình bậc 2: ax2 + bx + c = 0
+     * @param A: hệ số bậc 2
+     * @param B: hệ số bậc 1
+     * @param C: số hạng tự do
+     */
     public static void giaiPTBac2(float a, float b, float c) {
         // kiểm tra các hệ số
         if (a == 0) {
@@ -60,3 +62,4 @@ public class lab2bai1 {
         }
     }
 }
+
